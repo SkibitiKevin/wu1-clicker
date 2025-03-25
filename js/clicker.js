@@ -37,22 +37,22 @@ let active = false; // exempel för att visa att du kan lägga till klass för a
 
 let achievements = [
     {
-        description: 'Museet är redo att öppna, grattis! ',
+        description: 'Våffel kiosken är redo att öppnas, grattis! ',
         requiredUpgrades: 1,
         acquired: false,
     },
     {
-        description: 'Nu börjar det likna något, fortsätt gräva!',
+        description: 'Nu börjar det likna något, fortsätt våffla!',
         requiredUpgrades: 10,
         acquired: false,
     },
     {
-        description: 'Klickare, med licens att klicka!',
+        description: 'Våfflare, med licens att våffla!',
         requiredClicks: 10,
         acquired: false,
     },
     {
-        description: 'Tac-2 god!',
+        description: 'Våffel gud!',
         requiredClicks: 10000,
         acquired: false,
     },
@@ -163,22 +163,22 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Sop',
+        name: 'Runt våffeljärn',
         cost: 10,
         amount: 1,
     },
     {
-        name: 'Kvalitetsspade',
+        name: 'Vanligt våffeljärn',
         cost: 50,
         clicks: 2,
     },
     {
-        name: 'Skottkärra',
+        name: 'Våffeljärn delux',
         cost: 100,
         amount: 10,
     },
     {
-        name: 'Grävmaskin',
+        name: 'Lathans våffeljärn',
         cost: 1000,
         amount: 100,
     },

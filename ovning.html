@@ -13,16 +13,16 @@
     </style>
 </head>
 <body>
-    <button type="Button">Click på mig</button>
+    <button id="#Clicker-button" type="Button">WAFFLES</button>
+    <p id="counter">Waffle Counter</p>
     <script>
         let clicks = 0
         const button = document.querySelector("#Clicker-button")
         const counter = document.querySelector("#Counter")
-        button.addEventListener("click", (event) => (
+        button.addEventListener("click", (event) => {
             clicks += 1
-            counter.textContent = klick $(clicks) // k-licks = clicks
-            console.log("Du klickade på mig")
-        ))
+            counter.textContent = `klick  ${clicks}` // k-licks = clicks
+        })
     </script>
 </body>
 </html>
