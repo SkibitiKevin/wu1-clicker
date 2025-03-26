@@ -170,7 +170,7 @@ upgrades = [
     {
         name: 'Vanligt våffeljärn',
         cost: 50,
-        clicks: 2,
+        clicks: 5,
     },
     {
         name: 'Våffeljärn delux',
@@ -213,14 +213,14 @@ function createCard(upgrade) {
     } else {
         header.textContent = `${upgrade.name}, +${upgrade.clicks} per klick.`;
     }
-    cost.textContent = `Köp för ${upgrade.cost} benbitar.`;
+    cost.textContent = `Köp för ${upgrade.cost} våfflor.`;
 
     card.addEventListener('click', (e) => {
         if (money >= upgrade.cost) {
             acquiredUpgrades++;
             money -= upgrade.cost;
-            upgrade.cost *= 1.5;
-            cost.textContent = 'Köp för ' + upgrade.cost + ' benbitar';
+            upgrade.cost *= 1.2;
+            cost.textContent = 'Köp för ' + upgrade.cost + ' Våfflor';
             moneyPerSecond += upgrade.amount ? upgrade.amount : 0;
             moneyPerClick += upgrade.clicks ? upgrade.clicks : 0;
             message('Grattis du har köpt en uppgradering!', 'success');
